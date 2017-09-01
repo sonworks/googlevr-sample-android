@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.omotenavi.googlevrsample.MainActivity">
-
+<!--
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -17,14 +17,78 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:fillViewport="false">
-
+    </ScrollView>
+-->
         <LinearLayout
             android:id="@+id/cardLinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <com.google.vr.sdk.widgets.pano.VrPanoramaView
+                    android:id="@+id/vr_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"/>
+
+                <com.google.vr.sdk.widgets.pano.VrPanoramaView
+                    android:id="@+id/vr_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <com.google.vr.sdk.widgets.pano.VrPanoramaView
+                    android:id="@+id/vr_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+
+                <com.google.vr.sdk.widgets.pano.VrPanoramaView
+                    android:id="@+id/vr_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:orientation="horizontal">
+
+                <com.google.vr.sdk.widgets.video.VrVideoView
+                    android:id="@+id/vr_video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_margin="3dp">
+
+                </com.google.vr.sdk.widgets.video.VrVideoView>
+
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 
 </RelativeLayout>

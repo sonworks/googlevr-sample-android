@@ -19,7 +19,8 @@
         </activity>
         <activity
             android:name=".VrPanoramaActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".VrVideoActivity"></activity>
     </application>
 
 </manifest>
